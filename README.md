@@ -33,6 +33,20 @@ Start from the modeling task, not from the database name:
 | Data-generation and integration tools | ADEPT, RadonPy, SPACIER, PolyMetriX, pylimer-tools, MatCloud+, RDKit, literature APIs | Filling data gaps, standardizing heterogeneous records, automated updates |
 | Representation and governance infrastructure | BigSMILES, PSMILES, PSELFIES, HELM, CRIPT, dataset cards, DVC/DataLad | Polymer-specific structure encoding, provenance, FAIR data management |
 
+## Recent Public Dataset Releases (2026)
+
+This is a selective list of recent releases with a public data landing page or repository. Public access does not imply unrestricted redistribution or commercial-use rights; check the record's license and source-data terms.
+
+| Dataset | Release and access | Data coverage | Good fit |
+| --- | --- | --- | --- |
+| [PolyBench26](https://github.com/rlearsch/PolymerBenchmark2026) | 2026 benchmark and dataset repository; compact source data and generation scripts are public | Nearly 250,000 data points for eight polymer properties, combining experimental, DFT, and MD sources; homopolymers and several copolymer architectures | Reproducible property-prediction benchmarks and architecture-transfer evaluation |
+| [Polymer membrane permeability and ATR-FTIR dataset](https://doi.org/10.15125/BATH-01709) | University of Bath Research Data Archive; CC BY 4.0; published 2026-09-09 | 204 dense polymer membranes, permeability for up to six gases, 860 spectra, polymer metadata, and an ML notebook | Multimodal membrane screening and gas-transport prediction |
+| [Nanoplastic disassembly in lipid membranes](https://doi.org/10.5281/zenodo.22936014) | Zenodo open dataset; published 2026-09-24 | Molecular-dynamics inputs and final frames for studying nanoplastic disassembly as polymer polydispersity and lipid composition vary | Polymer–membrane interaction and nanoplastic simulation studies |
+| [Poly(γ-benzyl-L-glutamate) membrane data](https://doi.org/10.5281/zenodo.22704383) | Zenodo; open under CC BY 4.0; published 2026-09-11 | Optical and mechanical characterization of ultrathin PBLG-based membranes, with supporting spectroscopy and microscopy data | Bioinspired polymer membranes and structure–property analysis |
+| [VIS–NIR–SWIR microplastics spectral library](https://doi.org/10.5281/zenodo.20180898) | Zenodo; open dataset; published 2026-05-14 | Reflectance spectra from 350–2500 nm for PET, HDPE, PVC, LDPE, PP, and PS, with color and particle-size metadata | Spectral matching and microplastic classification |
+| [Multilayer packaging water-vapor permeability data](https://doi.org/10.5281/zenodo.18262441) | Zenodo; public CSV; published 2026-01 | Water-vapor permeability data for 27 polymers, combining newly measured values and values transcribed from a report | Packaging barrier-property modeling and circular-material design |
+| [RxnChainer generated polymer dataset](https://doi.org/10.5281/zenodo.21878520) | Zenodo; public 326 MB archive; published 2026-08-16; non-commercial research use only without written permission | Reaction-guided idealized polymer repeat units and associated reproducibility data; structures are not experimentally validated | Polymer chemical-space analysis and generative-model research |
+
 ## 1. Core Polymer Property and Materials Databases
 
 These databases are the main starting points for polymer structure-property modeling. They usually contain thermal, mechanical, electrical, optical, rheological, solution, processing, or compositional information, often with literature provenance and test-condition metadata.
@@ -107,6 +121,7 @@ Spectroscopy datasets are useful for polymer identification, chemical-structure 
 | Resource | Access | Main data types | Best use |
 | --- | --- | --- | --- |
 | [FTIR-Plastics](https://pmc.ncbi.nlm.nih.gov/articles/PMC11252596/) | Open dataset | FTIR spectra for PET, HDPE, PVC, LDPE, PP, and PS | Microplastic identification and spectral classification |
+| [VIS–NIR–SWIR microplastics spectral library](https://doi.org/10.5281/zenodo.20180898) | Open Zenodo dataset (2026) | 350–2500 nm reflectance spectra for six common plastics with color and particle-size metadata | Multiband microplastic identification and spectral classification |
 | NIMS MatNavi Polymer NMR Database | Free registration may be required | Polymer NMR spectra and test-condition metadata | Polymer structural identification and NMR-based modeling |
 | [SpectraBase](https://spectrabase.com/about) | Free lookup; paid bulk/premium access | NMR, FTIR, Raman, UV/Vis and other spectra | Spectral search, structure identification, and model training with licensed exports |
 | NMRExtractor / NMRBank | Open academic resource | NMR data extracted from open-access chemical literature | Literature-scale NMR data mining and structure-spectrum modeling |
@@ -122,10 +137,12 @@ Computational resources are especially useful when experimental labels are scarc
 
 | Resource | Access | Main data types | Best use |
 | --- | --- | --- | --- |
+| [PolyBench26](https://github.com/rlearsch/PolymerBenchmark2026) | Public GitHub repository and benchmark (2026) | Nearly 250,000 polymer-property data points across eight properties from experimental, DFT, and MD sources | Reproducible property prediction across homopolymers and copolymer architectures |
 | OPoly26 / Open Polymers 2026 | Public or project-linked release | Large-scale polymer quantum-chemistry and DFT-style computed properties; associated benchmark tasks | Foundation-model training, transfer learning, and large-scale property prediction |
 | POINT2 | Research benchmark dataset | Multi-task polymer labels for glass-transition temperature, melting temperature, thermal conductivity, fractional free volume, density, and gas permeability | Multi-task learning, uncertainty quantification, transport-property prediction, and model interpretability |
 | [PI1M](https://github.com/RUIMINMA1996/PI1M) | Public GitHub repository | Virtual polyimide structures and computed properties | Polyimide screening and generative-design benchmarks |
 | [Open Macromolecular Genome](https://zenodo.org/records/7556992) | Public data repository | Synthetically accessible generated polymer candidates | Reverse polymer design and generative modeling |
+| [RxnChainer generated polymer dataset](https://doi.org/10.5281/zenodo.21878520) | Public Zenodo download (2026); contact authors regarding commercial-use permission | Generated polymer structures accompanying a study of reaction-guided synthesis and polymer chemical space | Reaction-aware polymer design, chemical-space analysis, and model pretraining |
 | PolyOmics | Project/database resource | Molecular-dynamics-derived polymer properties and standardized simulation outputs | MD-driven polymer informatics |
 | ADEPT | Open or research workflow depending on release | Automated polymer MD workflow from monomer SMILES to amorphous chains, equilibration, DFT monomer descriptors, and property extraction | High-throughput physical-property generation and surrogate-model training |
 | [RadonPy](https://github.com/RadonPy/RadonPy) | Open-source software | Automated polymer modeling, force-field assignment, MD simulation, property extraction | Generating standardized high-throughput simulation datasets |
@@ -164,6 +181,8 @@ Image datasets support computer-vision tasks such as phase recognition, segmenta
 | Resource | Access | Main data types | Best use |
 | --- | --- | --- | --- |
 | [GFRP/PP Composite FM-SEM Dataset](https://pmc.ncbi.nlm.nih.gov/articles/PMC12907714/) | Open for non-commercial research according to dataset terms | Field-emission SEM images and porosity/impregnation-related annotations for woven glass-fiber-reinforced polypropylene | Composite microstructure quantification and property prediction |
+| [Polymer membrane permeability and ATR-FTIR dataset](https://doi.org/10.15125/BATH-01709) | University of Bath archive; CC BY 4.0 (2026) | 860 ATR-FTIR spectra paired with membrane polymer identities and gas-permeability labels | Linking vibrational spectra to gas-transport properties |
+| [Poly(γ-benzyl-L-glutamate) membrane data](https://doi.org/10.5281/zenodo.22704383) | Open Zenodo dataset; CC BY 4.0 (2026) | Optical transmittance, Raman, UV/VIS, SEM, profilometry, and mechanical testing data for ultrathin PBLG membranes | Multimodal characterization and membrane structure–property modeling |
 | [NIST SEM Image Segmentation Dataset](https://catalog.data.gov/dataset/detection-limits-for-sem-image-segmentation) | Open government dataset | SEM images, segmentation labels, and detection-limit examples | SEM segmentation, robustness testing, and benchmark training |
 | [Carbon-m1](https://openreview.net/pdf?id=q6xm6PEhNv) | Public research dataset | Multimodal polymer data, including microstructure images and associated property/structure metadata | Vision-language and multimodal polymer property modeling |
 | Polymer microstructure image datasets from academic groups | Availability varies | SEM/TEM/AFM images with compatibility, morphology, or defect labels | Polymer blend compatibility and defect prediction |
@@ -180,6 +199,7 @@ These sources are narrower than the core databases but can be more valuable for 
 | --- | --- | --- |
 | Environmental safety and plastic chemicals | LitChemPlast, microplastics FTIR/image datasets, EPA/NIST resources | Additives, migrants, degradation products, environmental identification |
 | Chemical recycling and depolymerization | TROPIC, ring-opening polymerization literature, degradation studies | Reaction thermodynamics and circularity-oriented polymer design |
+| Packaging barrier properties | [Multilayer packaging water-vapor permeability data](https://doi.org/10.5281/zenodo.18262441), polymer membrane permeability dataset | Water-vapor and gas-transport prediction for packaging and membrane materials |
 | Conductive and bioelectronic polymers | Reviews and supplementary datasets on conductive polymer composites, bioelectronic hydrogels, neural-interface materials | Functional labels, conductivity, biocompatibility, degradation behavior |
 | Biodegradable polymers | Reviews, sustainability datasets, domain-specific literature extractions | Degradation, environmental behavior, biomedical or packaging applications |
 | Biomedical polymers and molecular imprinting | Polymer-drug interaction datasets, PDB/RCSB, molecularly imprinted polymer studies | Binding, interaction, recognition, and bio-interface data |
@@ -237,6 +257,7 @@ The newer AI-for-polymer literature increasingly separates raw data sources from
 | PI1M | Virtual polymer structure pool | Self-supervised pretraining, generative exploration, and polymer embedding development |
 | OMG | Synthesis-aware virtual polymer space | Inverse design constrained by purchasable precursors and reaction templates |
 | OPoly26 / Open Polymers 2026 | Large computed dataset | Foundation-model training and large-scale computed-property learning |
+| [PolyBench26](https://github.com/rlearsch/PolymerBenchmark2026) | Open multi-source benchmark (2026) | Reproducible evaluation across eight properties and multiple polymer architectures |
 | polyBERT | Sequence representation model | Dense polymer fingerprints from PSMILES-style strings |
 | polyBART | Encoder-decoder/generative model | Bidirectional structure-property translation and constrained polymer generation |
 | TransPolymer | Transformer property model | Transfer learning across polymer property tasks |
@@ -328,6 +349,13 @@ Before training or publishing a dataset, check:
 - PolyIE: A Dataset of Information Extraction from Polymer Material Scientific Literature. https://ar5iv.labs.arxiv.org/html/2311.07715
 - Carbon-m1: a Massive, Multi-Modal Synthetic Dataset for Complex Polymeric Materials. https://openreview.net/pdf?id=q6xm6PEhNv
 - GFRP/PP FM-SEM dataset. https://pmc.ncbi.nlm.nih.gov/articles/PMC12907714/
+- PolyBench26: An open benchmark for machine-learning-based polymer property prediction. https://arxiv.org/abs/2609.27036
+- Polymer membrane permeability and ATR-FTIR dataset (University of Bath). https://doi.org/10.15125/BATH-01709
+- Nanoplastic disassembly in lipid membranes dataset. https://doi.org/10.5281/zenodo.22936014
+- Poly(γ-benzyl-L-glutamate) membrane dataset. https://doi.org/10.5281/zenodo.22704383
+- VIS–NIR–SWIR microplastics spectral library. https://doi.org/10.5281/zenodo.20180898
+- Multilayer packaging water-vapor permeability data. https://doi.org/10.5281/zenodo.18262441
+- RxnChainer generated polymer dataset. https://doi.org/10.5281/zenodo.21878520
 - Detection Limits for SEM Image Segmentation. https://catalog.data.gov/dataset/detection-limits-for-sem-image-segmentation
 - Open Macromolecular Genome. https://pmc.ncbi.nlm.nih.gov/articles/PMC10416319/
 - RadonPy. https://github.com/RadonPy/RadonPy
