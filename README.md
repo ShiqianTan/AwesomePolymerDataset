@@ -41,6 +41,7 @@ Recent examples with a public repository or data record. A public download does 
 - [Khazana](https://khazana.gatech.edu/dataset/) — computational and curated polymer properties for screening and prediction.
 - [Polymer Genome](https://www.polymergenome.org/) — property prediction and design resources; access may require registration.
 - [NanoMine](https://materialsmine.org/nm) — polymer nanocomposite data, metadata, and analysis tools.
+- [Block Copolymer Phase Behavior Database (BCDB)](https://acdc.alcf.anl.gov/mdf/detail/bcdb_v1.3/) — literature-curated phase measurements and characterization records for block copolymers, with simulation phase-diagram data; the MDF record lists CC BY 4.0.
 - [CAMPUS Plastics](https://www.campusplastics.com/) and [MatWeb](https://www.matweb.com/) — grade-level engineering data; confirm supplier and use terms.
 
 ### Synthesis, copolymers, and recycling
@@ -56,7 +57,9 @@ Recent examples with a public repository or data record. A public download does 
 
 - [OPoly26](https://arxiv.org/abs/2512.23117) — millions of DFT calculations on polymer-derived structures.
 - [PolyOmics](https://huggingface.co/datasets/yhayashi1986/PolyOmics) — large-scale molecular-dynamics simulations and polymer properties.
+- [HTP-MD](https://data.matr.io/htp/) — polymer-electrolyte molecular-dynamics trajectories and derived transport properties, including systems with Li-TFSI salts.
 - [PI1M](https://github.com/RUIMINMA1996/PI1M) — virtual polyimide structures and computed properties.
+- [PolyUniverse](https://github.com/ytl0410/PolyUniverse) — rule-generated virtual polymer libraries; the repository includes generation code and a small example dataset, with generation results also archived on [Zenodo](https://zenodo.org/records/12585902).
 - [Open Macromolecular Genome](https://zenodo.org/records/7556992) — generated candidates constrained by synthetic accessibility.
 - [POINT2](https://github.com/Jiaxin-Xu/POINT2) — multi-property benchmark for thermal, transport, and density prediction.
 - [Carbon-m1](https://openreview.net/pdf?id=q6xm6PEhNv) — multimodal synthetic polymer dataset.
@@ -77,6 +80,12 @@ Recent examples with a public repository or data record. A public download does 
 - [ChemProps](https://pmc.ncbi.nlm.nih.gov/articles/PMC7955638/) — polymer name normalization API.
 - [Open Polymer Challenge](https://arxiv.org/abs/2512.08896) — competition data and evaluation resources.
 - Publisher APIs, [Crossref](https://www.crossref.org/documentation/retrieve-metadata/rest-api/), [PubMed](https://pubmed.ncbi.nlm.nih.gov/), and [arXiv](https://info.arxiv.org/help/api/index.html) can support literature-scale collection; access terms differ.
+
+### Data schemas and infrastructure
+
+- [CRIPT](https://www.criptapp.org/) — community platform for capturing and sharing polymer research data; it hosts resources including the BCDB listed above.
+- [PolyDAT](https://doi.org/10.1021/acs.jcim.1c00028) — a generic schema for polymer characterization, species, precursors, and transformations; it is a data format rather than a standalone dataset.
+- [OFET-db and process ontology](https://doi.org/10.1021/acs.chemmater.3c01842) — a process-aware schema and repository for conjugated-polymer OFET data, covering ordered solution preparation, substrate treatment, deposition, post-processing, and device measurements; the paper describes literature-curated and laboratory records.
 
 ## Choose a polymer representation
 
