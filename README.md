@@ -24,6 +24,7 @@ Recent examples with a public repository or data record. A public download does 
 | Dataset | What it contains | Access and notes |
 | --- | --- | --- |
 | [PolyBench26](https://github.com/rlearsch/PolymerBenchmark2026) | Nearly 250,000 data points across eight properties, from experimental, DFT, and MD sources; includes multiple polymer architectures | Open benchmark; source data and redistribution terms vary |
+| [ADEPT–PolyGraphMT](https://github.com/sobinalosious/PolyGraphMT) | About 62,000 polymer-property values across 28 properties, combining experimental measurements, MD, DFT, and group-contribution estimates | CSV inputs, trained models, and scripts are available in the repository; see the [Digital Discovery article](https://doi.org/10.1039/D6DD00206D). Check repository terms before reuse; a license was not apparent in the public repository. |
 | [Polymer membrane permeability and ATR-FTIR](https://doi.org/10.15125/BATH-01709) | 204 dense polymer membranes, up to six gas permeability labels, 860 spectra, and an ML notebook | University of Bath archive; CC BY 4.0 |
 | [Nanoplastic disassembly in lipid membranes](https://doi.org/10.5281/zenodo.22936014) | Simulation inputs and final frames for nanoplastics interacting with lipid membranes | Zenodo record; check record for reuse terms |
 | [PBLG nanofibrous membrane data](https://doi.org/10.5281/zenodo.22704383) | Optical, Raman, SEM, morphology, and mechanical data for ultrathin poly(γ-benzyl-L-glutamate) membranes | Zenodo; CC BY 4.0 |
@@ -68,6 +69,7 @@ These services provide interactive prediction or discovery workflows. They are d
 ### Computation and benchmarks
 
 - [OPoly26](https://arxiv.org/abs/2512.23117) — millions of DFT calculations on polymer-derived structures.
+- [PolyGraphMT](https://github.com/sobinalosious/PolyGraphMT) — multi-task, multi-fidelity polymer-property data and graph-neural-network models; the paper reports about 62,000 values across 28 properties from experimental, MD, DFT, and group-contribution sources. See the [Digital Discovery article](https://doi.org/10.1039/D6DD00206D); check repository terms before reuse.
 - [PolyOmics](https://huggingface.co/datasets/yhayashi1986/PolyOmics) — large-scale molecular-dynamics simulations and polymer properties.
 - [HTP-MD](https://data.matr.io/htp/) — polymer-electrolyte molecular-dynamics trajectories and derived transport properties, including systems with Li-TFSI salts.
 - [PI1M](https://github.com/RUIMINMA1996/PI1M) — virtual polyimide structures and computed properties.
