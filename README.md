@@ -44,6 +44,18 @@ Recent examples with a public repository or data record. A public download does 
 - [Block Copolymer Phase Behavior Database (BCDB)](https://acdc.alcf.anl.gov/mdf/detail/bcdb_v1.3/) — literature-curated phase measurements and characterization records for block copolymers, with simulation phase-diagram data; the MDF record lists CC BY 4.0.
 - [CAMPUS Plastics](https://www.campusplastics.com/) and [MatWeb](https://www.matweb.com/) — grade-level engineering data; confirm supplier and use terms.
 
+### Online polymer property-prediction platforms
+
+These services provide interactive prediction or discovery workflows. They are distinct from downloadable datasets; check account requirements, model scope, and terms before using predictions as research data.
+
+| Platform | Link | Predictable properties or tasks | Description |
+| --- | --- | --- | --- |
+| [CEMP](https://cleanenergymaterials.cn/) | [Open platform](https://cleanenergymaterials.cn/) | Polymer property search and prediction; platform also provides polymer simulation workflows | Integrates polymer records, prediction tools, visualization, and online QC/MD workflows for clean-energy materials. |
+| [Polymer Genome](https://polymergenome.org/) | [Open platform](https://polymergenome.org/) | Thermal, mechanical, electronic, and transport properties; exact outputs depend on the selected model | Uses pretrained machine-learning models to predict polymer properties from a repeat-unit representation or SMILES. The platform explicitly describes itself as a prediction platform, not a database. |
+| [POLYMAT Polymer Properties Predictor](https://polymatai.pythonanywhere.com/) | [Open predictor](https://polymatai.pythonanywhere.com/) | Copolymer reactivity ratios (r₁, r₂), radical-polymerization propagation rate constant (Kp), polymer glass-transition temperature (Tg), and monomer water solubility (Ws) | Provides machine-learning predictions developed at the POLYMAT research center, University of the Basque Country. |
+| [AI Plus Polymers](https://www.aipluspolymers.com/) | [Open platform](https://www.aipluspolymers.com/) | Polymer property prediction, structure generation, and formulation optimization | An AI-driven polymer innovation platform; its public landing page does not enumerate individual prediction targets. |
+| [PolyID](https://polyid.nrel.gov/) | [Open predictor](https://polyid.nrel.gov/) | Thermal, transport, and mechanical properties; supports six polymerization classes | Predicts properties from monomer structures using machine learning and supports structure-guided polymer screening. |
+
 ### Synthesis, copolymers, and recycling
 
 - [CoPolDB](https://www.copoldb.jp/copolym/) — radical copolymerization systems, feed/composition data, and reactivity ratios.
