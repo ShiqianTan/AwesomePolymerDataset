@@ -90,13 +90,52 @@ Recent examples with a public repository or data record. A public download does 
 | Dataset | What it contains | Access and notes |
 | --- | --- | --- |
 | [PolyBench26](https://github.com/rlearsch/PolymerBenchmark2026) | Nearly 250,000 data points across eight properties, from experimental, DFT, and MD sources; includes multiple polymer architectures | Open benchmark; source data and redistribution terms vary |
-| [ADEPT–PolyGraphMT](https://github.com/sobinalosious/PolyGraphMT) | About 62,000 polymer-property values across 28 properties, combining experimental measurements, MD, DFT, and group-contribution estimates | CSV inputs, trained models, and scripts are available in the repository; see the [Digital Discovery article](https://doi.org/10.1039/D6DD00206D). Check repository terms before reuse; a license was not apparent in the public repository. |
+| [ADEPT–PolyGraphMT](https://github.com/sobinalosious/PolyGraphMT) | **61,730 tabulated property data points (≈62k) across 28 properties in six categories**, combining experimental measurements, MD, DFT, and group-contribution estimates; see the [property breakdown](#adept-polygraphmt-property-coverage) | CSV inputs, trained models, and scripts are available in the repository; see the [Digital Discovery article](https://doi.org/10.1039/D6DD00206D). Check repository terms before reuse; a license was not apparent in the public repository. |
 | [Polymer membrane permeability and ATR-FTIR](https://doi.org/10.15125/BATH-01709) | 204 dense polymer membranes, up to six gas permeability labels, 860 spectra, and an ML notebook | University of Bath archive; CC BY 4.0 |
 | [Nanoplastic disassembly in lipid membranes](https://doi.org/10.5281/zenodo.22936014) | Simulation inputs and final frames for nanoplastics interacting with lipid membranes | Zenodo record; check record for reuse terms |
 | [PBLG nanofibrous membrane data](https://doi.org/10.5281/zenodo.22704383) | Optical, Raman, SEM, morphology, and mechanical data for ultrathin poly(γ-benzyl-L-glutamate) membranes | Zenodo; CC BY 4.0 |
 | [VIS–NIR–SWIR microplastics library](https://doi.org/10.5281/zenodo.20180898) | 350–2500 nm reflectance spectra for PET, HDPE, PVC, LDPE, PP, and PS, with color and size metadata | Open Zenodo dataset |
 | [Multilayer packaging water-vapor data](https://doi.org/10.5281/zenodo.18262441) | Water-vapor permeability data for 27 polymers | Public CSV; values combine new measurements and literature data |
 | [RxnChainer generated polymers](https://doi.org/10.5281/zenodo.21878520) | Reaction-guided idealized polymer repeat units and reproducibility data | Non-commercial research use; commercial use needs written permission; structures are not experimentally validated |
+
+## ADEPT-PolyGraphMT property coverage
+
+The following summary is transcribed from the supplied **Table 1** of [ADEPT–PolyGraphMT](https://doi.org/10.1039/D6DD00206D), with [data and code available from the authors](https://github.com/sobinalosious/PolyGraphMT). Added **2026-10-19**. It describes the paper's dataset summary, rather than a live count of files in the upstream repository.
+
+The table covers **28 properties**: thermal (5), mechanical (4), transport (2), gas permeability (6), electronic/optical (9), and structural/physical (2). Summing its per-property counts gives **61,730 property data points**, not a count of unique polymers; a polymer can contribute observations for multiple properties. Source abbreviations are **Exp** = experimental measurements, **MD** = molecular dynamics, **DFT** = density functional theory, and **GC** = group contribution. Multiple source labels indicate combined sources, not a separate count for each source.
+
+| Category | Property | Symbol | Unit | Source | Points | Reported range |
+| --- | --- | --- | --- | --- | --- | --- |
+| Thermal | Melting temperature | T<sub>m</sub> | K | Exp | 3,671 | [210.6, 873.1] |
+| Thermal | Glass transition temperature | T<sub>g</sub> | K | Exp/MD | 7,360 | [134.1, 768.1] |
+| Thermal | Thermal diffusivity | α<sub>T</sub> | m² s⁻¹ | MD | 799 | [3.5 × 10⁻⁸, 8.3 × 10⁻⁷] |
+| Thermal | Thermal conductivity | κ | W m⁻¹ K⁻¹ | MD/Exp | 2,327 | [0.002, 1.59] |
+| Thermal | Specific heat capacity | C<sub>p</sub> | J kg⁻¹ K⁻¹ | Exp/MD/GC | 13,104 | [439.2, 2,831.7] |
+| Mechanical | Young's modulus | E | GPa | MD | 1,012 | [0.36, 11.04] |
+| Mechanical | Shear modulus | G | GPa | MD | 1,012 | [0.12, 4.2] |
+| Mechanical | Bulk modulus | K | GPa | MD | 1,017 | [0.72, 10.9] |
+| Mechanical | Poisson ratio | ν | — | MD | 1,012 | [−0.17, 0.48] |
+| Transport | Viscosity | η | Pa s | MD | 704 | [9.5 × 10⁻⁵, 0.11] |
+| Transport | Diffusivity | D | cm² s⁻¹ | MD | 700 | [2.19 × 10⁻⁹, 0.096] |
+| Gas permeability | He permeability | P<sub>He</sub> | Barrer | Exp | 466 | [0.05, 17,800] |
+| Gas permeability | H₂ permeability | P<sub>H₂</sub> | Barrer | Exp | 511 | [0.02, 36,800] |
+| Gas permeability | CO₂ permeability | P<sub>CO₂</sub> | Barrer | Exp | 756 | [1.2 × 10⁻⁶, 47,000] |
+| Gas permeability | N₂ permeability | P<sub>N₂</sub> | Barrer | Exp | 798 | [1.6 × 10⁻⁴, 16,600] |
+| Gas permeability | O₂ permeability | P<sub>O₂</sub> | Barrer | Exp | 807 | [7.0 × 10⁻⁷, 18,700] |
+| Gas permeability | CH₄ permeability | P<sub>CH₄</sub> | Barrer | Exp | 683 | [4.1 × 10⁻⁴, 35,000] |
+| Electronic/optical | Polarizability | α | a.u. | DFT | 2,036 | [1.9, 70.3] |
+| Electronic/optical | HOMO energy | E<sub>HOMO</sub> | eV | DFT | 2,916 | [−13.4, −6.84] |
+| Electronic/optical | LUMO energy | E<sub>LUMO</sub> | eV | DFT | 2,916 | [−3.01, 3.08] |
+| Electronic/optical | Band gap | E<sub>g</sub> | eV | DFT | 2,916 | [5.4, 16.7] |
+| Electronic/optical | Dipole moment | μ | Debye | DFT | 2,916 | [0.003, 12.49] |
+| Electronic/optical | Total electronic energy | E<sub>total</sub> | eV | DFT | 2,916 | [−3.2 × 10⁶, −2.5 × 10⁶] |
+| Electronic/optical | Refractive index | n | — | MD + DFT | 744 | [1.02, 1.84] |
+| Electronic/optical | Dielectric constant | ε | — | MD + DFT | 744 | [1.06, 12.7] |
+| Electronic/optical | Permittivity | ε<sub>r</sub> | — | MD + DFT | 744 | [9.4, 113.1] |
+| Structural/physical | Radius of gyration | R<sub>g</sub> | Å | MD | 2,500 | [9.17, 75.22] |
+| Structural/physical | Density | ρ | g cm⁻³ | MD/Exp | 3,643 | [0.11, 2.97] |
+
+Property names, symbols, units, and ranges follow the supplied table; `—` denotes a dimensionless quantity. In particular, **dielectric constant** and **permittivity** remain separate targets with their reported symbols and ranges. These are summary statistics, not the underlying polymer-level observations.
 
 ## Resource catalog
 
@@ -138,7 +177,7 @@ These services provide interactive prediction or discovery workflows. They are d
 ### Computation and benchmarks
 
 - [OPoly26](https://arxiv.org/abs/2512.23117) — millions of DFT calculations on polymer-derived structures.
-- [PolyGraphMT](https://github.com/sobinalosious/PolyGraphMT) — multi-task, multi-fidelity polymer-property data and graph-neural-network models; the paper reports about 62,000 values across 28 properties from experimental, MD, DFT, and group-contribution sources. See the [Digital Discovery article](https://doi.org/10.1039/D6DD00206D); check repository terms before reuse.
+- [PolyGraphMT](https://github.com/sobinalosious/PolyGraphMT) — multi-task, multi-fidelity polymer-property data and graph-neural-network models; **61,730 tabulated property points across 28 properties** from experimental, MD, DFT, and group-contribution sources. See the [full property breakdown](#adept-polygraphmt-property-coverage) for symbols, units, counts, and ranges, and the [Digital Discovery article](https://doi.org/10.1039/D6DD00206D); check repository terms before reuse.
 - [PolyOmics](https://huggingface.co/datasets/yhayashi1986/PolyOmics) — **>100k polymeric materials**, with family-specific property tables and MD snapshots; see the dataset comparison for subset counts.
 - [HTP-MD](https://data.matr.io/htp/) — polymer-electrolyte molecular-dynamics trajectories and derived transport properties, including systems with Li-TFSI salts.
 - [PI1M](https://github.com/RUIMINMA1996/PI1M) — **≈1M generated polymer structures** in p-SMILES; v2 adds heuristic synthetic-accessibility scores. It is a general polymer corpus without experimental property labels.
